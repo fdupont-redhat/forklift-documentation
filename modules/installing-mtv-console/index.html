@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+
+    
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Forklift Documentation | Forklift documentation</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Forklift Documentation" />
+<meta name="author" content="Red Hat Modernization and Migration Solutions documentation team" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Forklift documentation" />
+<meta property="og:description" content="Forklift documentation" />
+<meta property="og:site_name" content="Forklift Documentation" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Forklift Documentation" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Red Hat Modernization and Migration Solutions documentation team"},"url":"/forklift-documentation/modules/installing-mtv-console/","description":"Forklift documentation","@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/forklift-documentation/assets/img/forklift-logo-darkbg.svg"},"name":"Red Hat Modernization and Migration Solutions documentation team"},"headline":"Forklift Documentation","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/forklift-documentation/assets/css/style.css?v=d3b2b67ec3c78b336aae52a45cca88236cfefda4">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+  </head>
+  <body>
+    <header class="page-header">
+        
+          <a href="/forklift-documentation/"><img src="/forklift-documentation/assets/img/forklift-logo-darkbg.svg" alt="Forklift Documentation" width="200" /></a><br>
+        
+      
+        <a href="https://github.com/konveyor/forklift-documentation" class="btn">View on GitHub</a>
+      
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h1 id="installing-mtv-console_forklift">Installing  Forklift using the web console</h1>
+<div class="paragraph">
+<p>You can install  Forklift using the OpenShift web console.</p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisites</div>
+<ul>
+<li>
+<p>Install OpenShift Kubernetes Engine 4.6 on your cluster.</p>
+</li>
+<li>
+<p>Install the KubeVirt Operator.</p>
+</li>
+<li>
+<p>Log in as a user with <code>cluster-admin</code> privileges.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Procedure</div>
+<ol class="arabic">
+<li>
+<p>Open a browser window and log in to the OpenShift web console.</p>
+</li>
+<li>
+<p>Click <strong>Operators</strong> &#8594; <strong>OperatorHub</strong>.</p>
+</li>
+<li>
+<p>Use the <strong>Filter by keyword</strong> field to find the <strong>Konveyor Forklift Operator</strong>.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The Konveyor Forklift Operator is a Community Operator. Red Hat does not support Community Operators.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Click the Konveyor Forklift Operator and then click <strong>Install</strong>.</p>
+</li>
+<li>
+<p>On the <strong>Install Operator</strong> page, click <strong>Install</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Operators</strong> &#8594; <strong>Installed Operators</strong> to verify that the Konveyor Forklift Operator appears in the <strong>openshift-migration</strong> project with the status <strong>Succeeded</strong>.</p>
+</li>
+<li>
+<p>Click the Konveyor Forklift Operator.</p>
+</li>
+<li>
+<p>Under <strong>Provided APIs</strong>, locate the <strong>ForkliftController</strong>, and click <strong>Create Instance</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Create</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Workloads</strong> &#8594; <strong>Pods</strong> to verify that the Forklift pods are running.</p>
+</li>
+</ol>
+</div>
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/konveyor/forklift-documentation">forklift-documentation</a> is maintained by <a href="https://github.com/konveyor">konveyor</a>.</span>
+        
+      </footer>
+    </main>
+  </body>
+</html>
